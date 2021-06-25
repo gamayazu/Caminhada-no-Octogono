@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, CardBody} from "reactstrap";
+import {Card, CardBody, Row, Col} from "reactstrap";
 
 class Regras extends Component {
     render() {
@@ -11,25 +11,45 @@ class Regras extends Component {
                       className="ml-5 mr-5 mt-5 mb-5">
                     <CardBody>
                         <ul className="a">
-                            <li>Inicialmente após a definição dos grupos o(a) professor(a) deverá escolher a ordem de
-                                cada grupo, por meio de seleção ou sorteio.
+                            <li>
+                                Cada Aluno ou Grupo vai ser representado por um dos pinos.
                             </li>
-                            <li>Antes de começar a partida é indispensável providenciar folhas de rascunho e lápis para
-                                cada equipe que irá participar do jogo.
+                            <img src={"./imagens/regras/pinos.jpg"} className="my-3" alt="Pinos"/>
+                            <br/>
+                            <li>Antes de começar a partida é necessário que todos tenham folhas de rascunho e lápis para
+                                participar do jogo.
                             </li>
-                            <li>O grupo que irá iniciar a partida lança o dado e avança a quantidade de casas
-                                obtida na rolagem, seguido pelos demais grupos.
+                            <br/>
+                            <Row>
+                                <Col>
+                                    <img className="imgregras" src={"./imagens/regras/movimentação.png"}
+                                         alt="Ultima Casa"/>
+                                </Col>
+                                <Col>
+                                    <li>Cada Aluno ou Grupo vai rolar os dados e avançar algumas casas. Ao lado, a seta
+                                        vermelha demonstra o avanço ao jogar os dados.
+                                    </li>
+                                </Col>
+                            </Row>
+                            <br/>
+                            <Row>
+                                <Col>
+                                    <img className="imgregras" src={"./imagens/regras/quiz.jpg"} alt="Ultima Casa"/>
+                                </Col>
+                                <Col>
+                                    <li>Ao cair em casas Verdes, Amarelas ou Vermelhas os jogadores terão
+                                        que responder uma questão de múltipla escolha.
+                                        O grupo terá um tempo disponível para responder de acordo com a dificuldade da
+                                        pergunta.
+                                        Casas verdes: 45 segundos, amarelas: 75 segundos e vermelhas: 160 segundos.
+                                    </li>
+                                </Col>
+                            </Row>
+                            <br/>
+                            <li>Vence o jogo quem primeiro alcançar o octógono que está localizado na última casa,
+                                a 37.
                             </li>
-                            <li>Ao cair em casas com a cor diferente de branco, os jogadores terão
-                                que responder a uma questão de múltipla escolha. O grupo terá um tempo
-                                específico de acordo com a dificuldade da pergunta.
-                            </li>
-                            <li>Vence o jogo quem primeiro alcançar o octógono que está localizado na última casa
-                                (37).
-                            </li>
-                            <li>A sugestão para aumentar a motivação da turma é colocar alguma recompensa pela sua vitória, incentivando os alunos a darem o seu melhor.
-                            </li>
-
+                            <img src={"./imagens/regras/casa_final.jpg"} className="mt-3" alt="Ultima Casa"/>
                         </ul>
                     </CardBody>
                 </Card>

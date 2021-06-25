@@ -82,9 +82,14 @@ img {
 }
 
 .cardimg {
-    border-radius: 50%;
     width: auto;
     height: 160px;
+}
+
+.imgregras {
+    width: auto;
+    height: 200px;
+    margin-top: 20px;
 }
 
 ul.a {
